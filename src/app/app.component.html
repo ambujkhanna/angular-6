@@ -1,0 +1,16 @@
+<div style="width: 40%;float:left;">
+<h2>Test</h2>
+<div class="app-input-child" 
+[list]="obj" 
+*ngFor="let obj of objects">
+</div>
+</div>
+{{test()}}
+
+<div style="width: 40%;float:left;">
+    <app-output (addedinChildEvent)="addedinChild($event)"></app-output>
+  <hr/>
+  <div *ngFor="let user of userdata">
+    User name is <strong>{{user.name}}</strong> and his age is <strong>{{user.age}}</strong>.
+  </div>
+</div>
